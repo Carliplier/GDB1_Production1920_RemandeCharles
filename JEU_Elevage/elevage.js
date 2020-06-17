@@ -39,7 +39,7 @@ function create(){
 	var back = this.add.image(350,400,'fond');
 	
 	
-
+	//enclos
 	
 	barriere = this.physics.add.staticGroup();
 	barriere.create(305,20,'bh');
@@ -48,6 +48,7 @@ function create(){
 	barriere.create(570,300,'bv');
 	
 	
+	//decors
 	buisson = this.physics.add.staticGroup();
 	buisson.create(Phaser.Math.Between(60, 540),Phaser.Math.Between(60, 540),'buis');
 	buisson.create(Phaser.Math.Between(60, 540),Phaser.Math.Between(60, 540),'buis');
@@ -55,6 +56,7 @@ function create(){
 	buisson.create(Phaser.Math.Between(60, 540),Phaser.Math.Between(60, 540),'buis');
 	
 	
+	//animal
 	animal = this.physics.add.group();
 	animal = this.physics.add.sprite(Phaser.Math.Between(70, 500),Phaser.Math.Between(70, 500),'anim');
 	animal.setVelocity(Phaser.Math.Between(-150, 150),Phaser.Math.Between(-150, 150));

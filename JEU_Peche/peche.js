@@ -40,14 +40,14 @@ function create(){
 	var bateau = this.add.image(400,115,'bateau');
 	var ligne = this.add.image(235,520,'ligne');
 	
-	
+	//limite
 	lignemer = this.physics.add.staticGroup();
 	lignemer.create(300,225,'lignemer');
 	
 	
 	
 	
-	
+	//cibles
 	
 	fish = this.physics.add.group();
 	fish = this.physics.add.sprite(Phaser.Math.Between(0,600),Phaser.Math.Between(230,800),'poisson');
@@ -73,7 +73,7 @@ function create(){
 	this.physics.add.collider(lignemer,fish3);
 	
 	
-	
+	// filet
 	player = this.physics.add.sprite(235,250,'filet');
 	player.setCollideWorldBounds(true);
 	this.physics.add.collider(player,lignemer);
